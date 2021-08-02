@@ -1,0 +1,41 @@
+function add() {
+    x = 10;
+    y = 12;
+    z = x + y;
+}
+undefined
+add()
+undefined
+function add() {
+    x = 10;
+    y = 12;
+    z = x + y;
+    console.log("Sum is:", z);
+}
+undefined
+add()
+VM174:5 Sum is: 22
+undefined
+z = x - y
+-2
+x
+10
+y
+12
+function add() {
+    var x1 = 10;
+    var y1 = 12;
+    var z1 = x1 + y1;
+    console.log("Sum is:", z1);
+}
+undefined
+x1
+VM280:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM280:1
+add()
+VM271:5 Sum is: 22
+undefined
++6+93.
+
+99

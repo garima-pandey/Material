@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ScrollEvent.css">
+</head>
+<body>
+    <h1>Scroll Event</h1>
+
+    <div id="content">
+        <section id="section_1">
+            <img class="img-1" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+            <img class="img-2" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+        </section>
+        <section id="section_2">
+            <img class="img-1" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+            <img class="img-2" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+        </section>
+        <section>
+            <img class="img-3" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+            <img class="img-4" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+        </section>
+        <section>
+            <img class="img-3" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+            <img class="img-4" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+        </section>
+        <section>
+            <img class="img-3" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+            <img class="img-4" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+        </section>
+        <section>
+            <img class="img-3" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+            <img class="img-4" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+        </section>
+    </div>
+
+    <script>
+        var div_1 = document.getElementById("section_1");
+        var div_2 = document.getElementById("section_2");
+        window.addEventListener('load', function() {
+            div_1.className = 'active';
+        })
+        window.addEventListener('scroll', function() {
+            var scrollY = window.scrollY;
+            // console.log(scrollY);
+            //Scroll based on windows
+            // if(scrollY > 300)
+            // {
+            //     div_2.className = 'active';
+            // }
+            // else {
+            //     div_2.className = '';
+            // }
+            var scrollDiv = scrollY - div_2.offsetTop;
+            console.log(scrollDiv);
+
+            //Scroll based on particular div
+
+            if(scrollDiv > -200)
+            {
+                div_2.className = 'active';
+            }
+            else {
+                div_2.className = '';
+            }
+
+        })
+    </script>
+
+</body>
+</html>

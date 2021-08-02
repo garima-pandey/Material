@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Events</h1>
+
+    <div onmouseover="changeImage(this)" onmouseout="changeImage2(this)">
+        <img src="https://thumbs.gfycat.com/AncientGregariousHarvestmen-size_restricted.gif" alt="">
+    </div>
+
+    <script>
+        function changeImage(obj)
+        {
+            obj.innerHTML = '<img src="https://64.media.tumblr.com/tumblr_m43dy0zAbg1rnep7do1_500.gifv" alt="">';
+        }
+        function changeImage2(obj) {
+            obj.innerHTML = '<img src="https://thumbs.gfycat.com/AncientGregariousHarvestmen-size_restricted.gif" alt="">';
+        }
+    </script>
+
+</body>
+</html>

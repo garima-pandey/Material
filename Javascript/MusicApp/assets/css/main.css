@@ -1,0 +1,21 @@
+li {
+    padding-left: 76px !important;
+    position: relative;
+}
+
+li img {
+    position: absolute;
+    width: 2%;
+    left: 2%;
+    top: 8px;
+}
+
+
+.list-group-item {
+    background-color: lightgray;
+}
+
+li:hover {
+    background-color: rgb(207, 143, 143);
+    cursor: pointer;
+}

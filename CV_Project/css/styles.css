@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+}
+
+h1 {
+    color: #52734d;
+    font-size: 5.625em;
+    margin: 100px auto 0 auto;
+}
+
+h2 {
+    color: #52734d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+h3 {
+    color: #52734d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+p {
+    color: #52734d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    line-height: 2;
+}
+
+span {
+    text-decoration: underline;
+    color: #52734d;
+}
+
+hr {
+    border: 6px dotted #c1c1c1;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+.top-container {
+    background-color: #91c788;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 100px;
+    right: 300px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+}
+
+.bottom-container {
+    background-color:#91c788;
+    padding: 40px 0 60px;
+}
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.intro {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 120px auto;
+    text-align: left;
+}
+
+.contact-me {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.contact-message {
+    margin: 40px auto 20px;
+}
+
+.top-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    border-radius: 100px;
+}
+
+.middle-image {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    border-radius: 120px;
+}
+
+.bottom-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.footer-link {
+    margin: 0 20px;
+    color: #ddffbc;
+}
+
+.footer-link:hover {
+    color: #52734d;
+}
+
+.copyright {
+    padding: 20px 0;
+}
+
+.btn {
+    background-color: #91c788;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #52734d;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .btn:hover {
+    background-color: #52734d;
+    color: #fff;
+  }
+
+  

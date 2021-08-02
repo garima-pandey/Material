@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        img {
+            position: absolute;
+        }
+        .img-1 {
+            width: 30%;
+            animation: anim_1 8s;
+        }
+        @keyframes anim_1 {
+            0% {
+                left: 0%;
+            }
+            50% {
+                left: 100%;
+                transform: rotate(0deg);
+            }
+            100% {
+                left: -100%;
+                transform: rotateY(-360deg);
+            }
+        }
+        .img-2 {
+            width: 40%;
+            right: -100%;
+            animation: anim_2 4s;
+            animation-delay: 3.5s;
+        }
+        @keyframes anim_2 {
+            0% {
+                right: -100%;
+            }
+            100% {
+                right: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div-1">
+        <img src="https://thumbs.gfycat.com/AncientGregariousHarvestmen-size_restricted.gif" alt="" class="img-1">
+        <img src="https://lh3.googleusercontent.com/proxy/xC70uVfUPj75aaFcLZTLJlMnbwhjEMRaLOUpe4I9PA4rBVnmNx9iBvaVLkWd7ngkCPkS0tdd5m19pMv3-M_eDt1u6dcYvlJk6x_aXbYnYysWr1zQT7og4Q_pEHEt86TW3g1kF5MWGw" alt="" class="img-2">
+    </div>
+</body>
+</html>

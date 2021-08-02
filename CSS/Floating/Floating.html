@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Pseudo Elements
+        After and Before */
+
+        #parent {
+            /* height: 192px; */
+            background-color: darkblue;
+        }
+
+        #parent::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+
+        .col-1 {
+            background-color: cadetblue;
+            width: 30%;
+            float: left;
+        }
+
+        .col-2 {
+            background-color: coral;
+            width: 30%;
+            float: right;
+        }
+
+        .div-1 {
+            background-color: crimson;
+        }
+
+        /* .div-2 {
+            clear: both;
+        } */
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Floating</h1>
+
+    <div id="parent">
+
+        <div class="col-1">
+            <h2>This is column-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni repellendus praesentium ut illum
+                distinctio doloremque doloribus voluptatem adipisci, laborum aspernatur nihil recusandae quod aut
+                expedita
+                odio dolore corrupti illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sequi
+                aspernatur
+                maiores, quod esse, ratione quasi veritatis, cum deserunt qui exercitationem aut est eos natus similique
+                repellendus! Eveniet, non. Ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia
+                eveniet ducimus ad totam facere, unde provident alias cum asperiores quo delectus pariatur mollitia
+                cupiditate molestias adipisci nostrum vel optio!</p>
+        </div>
+
+        <div class="col-2">
+            <h2>This is column-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni repellendus praesentium ut illum
+                distinctio doloremque doloribus voluptatem adipisci, laborum aspernatur nihil recusandae quod aut
+                expedita
+                odio dolore corrupti illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sequi
+                aspernatur
+                maiores, quod esse, ratione quasi veritatis, cum deserunt qui exercitationem aut est eos natus similique
+                repellendus! Eveniet, non. Ad.</p>
+        </div>
+
+        <!-- <div class="div-2">
+
+        </div> -->
+
+    </div>
+
+    <div class="div-1">
+        <h2>This is another div</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui praesentium fuga delectus asperiores, quis ex
+            doloremque hic excepturi reprehenderit eum recusandae ut necessitatibus cumque nobis aliquid a repellat
+            architecto deleniti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ad, sed iure
+            doloribus ratione quia! Molestiae numquam adipisci nisi aperiam at impedit tempora sit maiores, optio
+            reiciendis, eum iusto eveniet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, quo
+            commodi sunt id numquam, cumque recusandae, officiis dolorum illum aut maiores! Quae, maiores? Eaque
+            incidunt quidem porro quis! Natus, dolor.</p>
+    </div>
+
+</body>
+
+</html>

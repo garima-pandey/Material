@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+
+</head>
+<body>
+
+    <button onclick="ajaxFunction()">Ajax Call</button>
+
+    <h3  id="demo"></h3>
+
+    <script>
+        function ajaxFunction() {
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+                //console.log(this.readyState, this.status); // you can see this in console it prints both things
+                if(this.readyState == 4 && this.status == 200) {
+                    //alert(this.responseText); // use this also if you want also works
+                    document.getElementById("demo").innerHTML = this.responseText;      
+                }
+            }
+            ajax.open('get', 'Text.txt', true); // using get over post we knew post is working when we send data in realtime on servers.
+            //true - this keyword is optional
+            ajax.send(); // use it to send data
+        }
+    </script>
+
+</body>
+</html>
